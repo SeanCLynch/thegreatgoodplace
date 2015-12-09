@@ -317,6 +317,6 @@ app.use(function (req, res, next) {
 })
 
 var port = process.env.PORT || 8080;
-http.listen(8080, function() {
+http.listen(port, function() {
 	console.log("App listening at localhost:8080 or env.PORT");
 });

@@ -27,6 +27,7 @@
     "ioredis": "~1.8.0",
     "marked": "*",
     "cookie-session": "*",
-    "morgan": "*"
+    "morgan": "*",
+    "dotenv": "*"
   }
 }

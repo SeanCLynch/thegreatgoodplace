@@ -316,6 +316,7 @@ app.use(function (req, res, next) {
 	res.status(404).send("404 - Page Not Found.");
 })
 
+var port = process.env.PORT || 8080;
 http.listen(8080, function() {
-	console.log("App listening at localhost:8080");
+	console.log("App listening at localhost:8080 or env.PORT");
 });

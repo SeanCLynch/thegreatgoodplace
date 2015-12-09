@@ -7,7 +7,7 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
-var config = require('./config.json');
+// var config = require('./config.json');
 // DB
 var Redis = require('ioredis');
 // Utils
@@ -29,7 +29,7 @@ var morgan = require('morgan');
 app.set('view engine', 'ejs');
 
 // Set up express middleware
-app.use(cookieParser(config.cookieParserSecret));
+app.use(cookieParser(process.env.cookieParserSecret));
 app.use(cookieSession({
 	name: 'GGPcookie',
 	keys: ['un','color','lat','long'],
@@ -232,8 +232,8 @@ app.get('/getPlaces', function(req, res) {
 			color: req.session.color
 		},
 		config: {
-			MBAccessToken: config.mapbox.accessToken,
-			MBMapId: config.mapbox.mapCode
+			MBAccessToken: process.env.mapboxAccessToken,
+			MBMapId: process.env.mapboxMapCode
 		}
 	});
 })

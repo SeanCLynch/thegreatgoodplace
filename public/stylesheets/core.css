@@ -11,3 +11,8 @@ body { margin:0; padding:0; }
 .pub_link, .msg-submit { background: #D57500; }
 ul.msg-list { background: #404F24; padding: 10px; list-style: none; }
 ul.msg-list li { background: #DBCA69; padding: 5px; margin-left: 20px; line-height: 80%; }
+body { background: #B99C6B; }
+.msg-box-holder.msg-box { vertical-align: middle; }
+.chat-header { background: #404F24; border-color: #493829; border-width: 5px; border-radius: 4px; }
+.chat-header h1 { color: white; }
+#chat a { color: #D57500; }

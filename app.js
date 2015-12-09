@@ -8,6 +8,8 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 // var config = require('./config.json');
+var dotenv = require('dotenv');
+dotenv.load();
 // DB
 var Redis = require('ioredis');
 // Utils
@@ -223,6 +225,7 @@ app.get('/logout', function(req, res) {
 });
 
 app.get('/getPlaces', function(req, res) {
+	console.log(process.env.mapboxAccessToken);
 	res.json({
 		places: places, // needs to query database
 		user: {

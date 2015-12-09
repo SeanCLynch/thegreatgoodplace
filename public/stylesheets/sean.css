@@ -1,0 +1,42 @@
+body { background-color: #468966; }
+.mainbodytext { text-align: center; }
+.image { padding-top: 6px; }
+.date { font-size: 10px; }
+.container {
+    background-color: #FFF0A5;
+    margin: 10px auto;
+    padding: 10px;
+    width: 480px;
+    border-radius: 8px;
+}
+.content {
+    text-indent: 1.5em;
+}
+.pure-menu {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+#projects { padding: 0; }
+#projects li {
+    list-style: none;
+    text-align: center;
+}
+#essaylist { padding: 0; }
+#essaylist li {
+    list-style: none;
+    padding-bottom: 3px;
+}
+a:link {
+    color: #B64926;
+    text-decoration: none;
+}
+a:hover {
+    /*color: #B64926;*/
+    text-decoration: underline;
+    border-radius: 8px;
+}
+a:visited {
+    color: #B64926;
+    text-decoration: none;
+}

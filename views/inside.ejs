@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src='../public/javascripts/chat.js'></script>
+    <link rel='stylesheet' href='../public/stylesheets/foundation.css'>
+    <link rel='stylesheet' href='../public/stylesheets/core.css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="https://js.pusher.com/3.0/pusher.min.js"></script>
+      <script>
+        // Enable pusher logging - don't include this in production
+        Pusher.log = function(message) {
+          if (window.console && window.console.log) {
+            window.console.log(message);
+          }
+        };
+
+        var pusher = new Pusher('6acd4c10301e13502f76', {
+          authEndpoint: '/pusher/auth',
+          encrypted: true
+        });
+        var channel = pusher.subscribe('test_channel');
+        channel.bind('my_event', function(data) {
+            var msg = '<div class="row"><div class="large-12 columns"><p><strong>Some Person said: </strong>'+data.message+'</p><ul class="inline-list"><li><a href="">Reply</a></li><li><a href="">Share</a></li></ul></div></div><hr/>';
+            $('.chat').append(msg);
+        });
+
+        $(document).on('click', '.msg-submit', function () {
+            console.log("CLICK");
+            var data = $('.msg').val();
+            var triggered = channel.trigger('client-my_event', { message: data });
+        });
+
+      </script>
+
+</head>
+<body>
+    <nav id="header" class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="/">The Great Good Place</a></h1>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li>
+              <a href='/'>Map</a>
+          </li>
+          <li>
+            <a data-reveal-id="loginModal">Login</a>
+            <div id="loginModal" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+              <h3 class='text-center'>Login</h3>
+                  <div class="row">
+                        <div id='modalMenu' class="small-12 columns text-center">
+                            <a id='locationButton' class="button radius">Location</a>
+                            <input id='name' type='text' placeholder="Username">
+                            <input id='color' type='text' placeholder="Color (hex value)">
+                            <a id='login' class="button radius">Go</a>
+                        </div>
+                  </div>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
+          </li>
+          <li>
+              <a href='/logout'>Logout</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <br>
+    <div class="row">
+     <div class="large-12 columns">
+       <div class="panel">
+         <h1>Welcome to <%= name %></h1>
+       </div>
+     </div>
+    </div>
+
+    <div class="row">
+
+
+     <div class="large-3 columns ">
+       <div class="panel">
+         <h5><a href="#">Your Name</a></h5>
+           <div class="section-container vertical-nav" data-section data-options="deep_linking: false; one_up: true">
+           <section class="section">
+             <h5 class="title"><a href="#">Section 1</a></h5>
+           </section>
+           <section class="section">
+             <h5 class="title"><a href="#">Section 2</a></h5>
+           </section>
+           <section class="section">
+             <h5 class="title"><a href="#">Section 3</a></h5>
+           </section>
+           <section class="section">
+             <h5 class="title"><a href="#">Section 4</a></h5>
+           </section>
+           <section class="section">
+             <h5 class="title"><a href="#">Section 5</a></h5>
+           </section>
+           <section class="section">
+             <h5 class="title"><a href="#">Section 6</a></h5>
+           </section>
+         </div>
+
+       </div>
+     </div>
+
+
+
+     <div class="large-9 columns chat">
+
+      <div class="row">
+          <div class="large-12 columns">
+              <input class="msg" type="text" />
+              <button class="msg-submit" type="submit">Submit</button>
+          </div>
+      </div>
+
+
+       <div class="row">
+         <div class="large-12 columns">
+           <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+           <ul class="inline-list">
+             <li><a href="">Reply</a></li>
+             <li><a href="">Share</a></li>
+           </ul>
+         </div>
+       </div>
+
+
+       <hr/>
+
+       <div class="row">
+         <div class="large-12 columns">
+           <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+           <ul class="inline-list">
+             <li><a href="">Reply</a></li>
+             <li><a href="">Share</a></li>
+           </ul>
+         </div>
+       </div>
+
+
+       <hr/>
+   </div>
+    </div>
+
+
+
+
+    <footer class="row">
+     <div class="large-12 columns">
+       <hr/>
+       <div class="row">
+         <div class="large-5 columns">
+           <p>© Copyright</p>
+         </div>
+         <div class="large-7 columns">
+           <ul class="inline-list right">
+             <li><a href="#">Section 1</a></li>
+             <li><a href="#">Section 2</a></li>
+             <li><a href="#">Section 3</a></li>
+             <li><a href="#">Section 4</a></li>
+             <li><a href="#">Section 5</a></li>
+             <li><a href="#">Section 6</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src='../public/javascripts/modernizr.js'></script>
+    <script type="text/javascript" src='../public/javascripts/foundation.js'></script>
+</body>
+</html>

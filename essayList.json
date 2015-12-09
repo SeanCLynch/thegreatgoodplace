@@ -1,0 +1,10 @@
+{
+    "essays": [
+        {"title": "Consuming & Creating", "about": "Intake should equal output.", "date": "Old", "slug": "e-consuming-creating"},
+        {"title": "Finding Your Kinky Tribe", "about": "The people that make you tick.", "date": "Old", "slug": "e-kinky-tribe"},
+        {"title": "Modern Witchcraft", "about": "It happens to all of us.", "date": "Old", "slug": "e-modern-witchcraft"},
+        {"title": "A Lesson From Pokemon", "about": "See, it was worth it Mom!", "date": "Old", "slug": "e-pokemon-lesson"},
+        {"title": "Github, Academia and Community", "about": "Old rant about anthropology.", "date": "Old", "slug": "e-anthro-community"},
+        {"title": "Research Review - Commnuity Feedback", "about": "Me trying to be an academic.", "date": "Old", "slug": "r-community-feedback"}
+    ]
+}

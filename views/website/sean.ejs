@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' contents='width=device-width, initial-scale=1.0'>
+	<title>Sean's Place</title>
+	<link rel='stylesheet' href='http://yui.yahooapis.com/pure/0.6.0/pure-min.css'>
+	<link rel="stylesheet" type="text/css" href="/public/stylesheets/sean.css">
+	<script type='text/javascript'>
+		window.onload = function () {
+			var links = document.getElementsByTagName("a");
+			for (var i = 0; i < links.length; i++) {
+				links[i].onmouseover = function (e) {
+					var c = Math.floor((Math.random() * (3)) + 1);
+					if (c == 1) {
+						this.style['color'] = "#5CC4A9";//teal
+					} else if (c == 2) {
+						this.style['color'] = "#C36EBF";//purp
+					} else if (c == 3) {
+						this.style['color'] = "#C87B2C";//orange
+					} else {
+						this.style['color'] = "#B64952";//og link color
+					}
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class='container'>
+		<div class="pure-menu pure-menu-horizontal">
+		    <ul class="pure-menu-list">
+		    	<li class="pure-menu-item"><a href="/bartender/essays"  class="pure-menu-link">Essays</a></li>
+		        <li class="pure-menu-item"><a href="https://pinboard.in/u:seanclynch/t:linklist/"  class="pure-menu-link">Links</a></li>
+		        <li class="pure-menu-item"><a href="https://github.com/SeanCLynch"  class="pure-menu-link">Github</a></li>
+		        <li class="pure-menu-item"><a href="./public/seansresume.pdf"   class="pure-menu-link">Resume</a></li>
+		    </ul>
+		</div>
+
+		<div class='image' align='center'>
+			<img src='../../public/images/logo-small.jpg' style='width:256px;height:128px;'>
+		</div>
+
+		<div class="pure-g mainbodytext">
+		    <div class="pure-u-1">
+		    	<p>
+					Hey, my name is Sean. I design, build and study digital environments. I'm currently a senior at Upenn studying computer science and sociology. My focus is online communities, ethnographic methods, and user experience. If you'd like to reach me, here is my <a href='https://twitter.com/greenitalics'>Twitter</a>.
+				</p>
+			</div>
+			<div class='pure-u-1'>
+				<h3>Some Projects:</h3>
+				<ul id='projects'>
+					<li><a href="http://www.pennappsfellows.com" >PennApps Fellows</a> - Internship program in Philly. </li>
+					<li><a href="http://seans.pub" >Our Pubs</a> - Geo-located, digital pubs.</li>
+					<li><a href="https://imgur.com/a/6pjjU">Cartography</a> - Hand-drawn fantasy world.</li>
+					<li><a href="http://meamlabs.seas.upenn.edu/">MEAM Labs</a> - Info for MEAM students.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

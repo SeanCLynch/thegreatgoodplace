@@ -1,0 +1,14 @@
+Modern Witchcraft
+---
+  
+It's probably happened to you. Your technology backfired, stopped working, behaved unexpectedly, started acting funny and you don't know why. Occasionally, the keyboard on my phone stays up after I'm done typing. I don't know why, but it is inconvenient and strange. If anything like this has happened to you, you're a victim of what I would like to call modern witchcraft. (And no I'm in no way referring to groups like Wicca).
+
+There is a slight disconnect in my idea of witchcraft and traditional interpretations.  Historically, witches refer to people who have performed negative acts in the eyes of their neighbors, or are demonic in some respect. The agent of modern witchcraft is some unseen ill-will directed at us, because our high-society has eliminated the possibility of magic or traditional 'witches' . But the connecting thread is some kind of perceived negative influence on our life, outside of our control. And this mysterious misfortune (that has persisted throughout human society) is what lead me to the idea of modern witchcraft.
+
+Witchcraft is basically an explanation/ideology surrounding misfortune. In today's world we're at a loss for words, who do you blame when the USB charger for your phone that was fine yesterday stops working? Metaphorically, when your corn that was fine yesterday is wilting today, you cast a suspicious eye around the neighborhood. Venting your frustration. Today we either blame the very technology that was helping us, or bottle up frustration and shrug your shoulders.
+
+This idea isn't entirely fleshed out, and I'm eager to hear what others think of modern vs traditional witchcraft, so let me know in the comments. But let me end with a anecdote from a trip a took a couple weeks ago:
+
+A friend and I were returning from upstate New York and realized from our trip there that we needed a car charger for our cell phone. So we stopped at a gas station and picked up a cheap one. When we got to the car and plugged in our phones nothing was charging. First disbelief overtook us, we twisted and turned and restarted everything to no avail. Next anger, my friend applied copious force to all the connections, nothing. He asked why it wasn't working, and I sarcastically replied, "magic" (thinking about the very concept in this post). We gave up, cursing our luck and faulty technology.
+
+Later, after we returned home, my father had a look at the car and reported that the dashboard (where the car charger plugged in) had blown a fuse, rendering it electronically useless. Maybe in actuality misfortune is never unexplainable or magic, it's just a matter of knowledge. Technology doesn't have to be full of misfortune, but many of us allow it to pass around us without ever attempting to understand it. And that makes it easier to experience frustration, but it doesn't have to be like that. Knowledge can kill bad luck.
